@@ -1,0 +1,129 @@
+/* -------------------------------------- HEADER ---------------------------------- */
+
+header {
+    width: 100%;
+    height: 39vw;
+    background-color: #ffdbbc;
+}
+
+.welcome {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.subtext {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #0d0d0d;
+}
+
+.container-header {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-img {
+    width: 18vh;
+    height: 7vh;
+}
+
+.user-image {
+    width: 30px;
+    height: 30px;
+    padding: 4.8px 5.8px 4.9px 5.4px;
+    border-radius: 16.5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #e82147;
+
+}
+
+.user-section {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-txt {
+    width: 90vh;
+    height: 7vh;
+    padding: 9px 22.6px 9.2px 20px;
+    border-radius: 20px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: white;
+    border: 1px solid #D0CFCE;
+    outline: none;
+}
+
+.container-section {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.welcome-section {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.welcome-section img {
+    width: 230px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+}
+
+.txt-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img-section {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+}
+
+.color-name {
+    color: #e82147;
+}
+
+.container-img {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img-header {
+    width: 380px;
+    height: 280px;
+}
+
+.food-image {
+    width: 280px;
+    height: 220px;
+    position: absolute;
+}
+
+/* --------------------------- FIM DO HEADER ------------------------ */
+
