@@ -1,1 +1,5 @@
-## Readme a ser preenchido...
+# Projeto: Cookfy
+
+<img src="./assets/landpage.png">
+
+#### Continua...

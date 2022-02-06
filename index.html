@@ -9,47 +9,118 @@
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@700&display=swap">
     <title>CookFy</title>
 </head>
 
 <body>
-    <header>
-        <section class="container-header">
-            <img src="./assets/logo.png" class="logo-img" />
-            <form>
-                <input type="text" class="search-txt" placeholder="Pesquise alguma receita" />
-            </form>
-            <div class="user-section">
-                <p>Marina</p>
-                <div class="user-image">F</div>
-            </div>
-        </section>
-        <section class="container-section">
-            <div class="welcome-section">
-                <img src="./assets/header-foto.svg">
-                <div class="txt-section">
-                    <span class="welcome">
-                        <h1>Bem vindo de volta<h1>
-                        <h1 class="color-name">Marina Wedderhoff</h1>
-                    </span>
-                    <span class="subtext">
-                        <h4>Contribuição da comunidade:</h4>
-                        <h4>Ceviche de peixe branco</h4>
-                        <h4 class="color-name">Por Michel Felipe</h4>
-                    </span>
+    <main>
+        <section class="first-section">
+            <div class="search-bar">
+                <img class="logo-image" src="./assets/logo.png" />
+                <form>
+                    <input type="text" class="search-txt" placeholder="Pesquise alguma receita">
+                    <img src="./assets/lupa.svg" class="lupa" alt="Buscar" />
+                    </input>
+                </form>
+                <div class="user-info">
+                    <p class="color-name">Marina</p>
+                    <div class="user-image">
+                        <img src="./assets/user-img.svg" width="30">
+                    </div>
                 </div>
             </div>
-            <figure class="img-section">
-                <div class="container-img">
-                    <img src="./assets/back-header.svg" class="background-img-header">
-                    <img src="./assets/louis-hansel-ZwpX0AJ7GV8-unsplash.png" class="food-image">
+            <div class="welcome-content">
+                <div class="welcome-content-first-section">
+                    <img src="./assets/header-foto.svg">
+                    <div class="txt-content">
+                        <div class="welcome-txt">
+                            <h1>Bem vindo de volta<br><span class="color-name">Marina Wedderhoff</span>
+                                <h1>
+                        </div>
+                        <span class="subtext">
+                            <h4>Contribuição da comunidade:
+                                <br>Ceviche de peixe branco
+                                <br><span class="color-name">Por Michel Felipe</span></h4>
+                        </span>
+                    </div>
                 </div>
-            </figure>
+                <figure class="welcome-content-second-section">
+                    <div class="container-img">
+                        <img src="./assets/back-header.svg" class="background-img">
+                        <img src="./assets/louis-hansel-ZwpX0AJ7GV8-unsplash.png" class="food-image">
+                    </div>
+                </figure>
+            </div>
         </section>
-    </header>
+
+        <section class="second-section">
+            <h1 class="phrase-1">Experimente alguma das últimas receitas</h1>
+            <div class="img-content">
+                <img src="./assets/asset1.svg" width="100">
+            </div>
+            <article class="main-container">
+                <figure>
+                    <img src="./assets/patrick-kalkman-HkdQ0zoHT5E-unsplash.png" width="500">
+                </figure>
+                <div class="main-content">
+                    <p>Adicionado ontem</p>
+                    <p>Sanduíche de tomate com salada de ovos</p>
+                    <div class="estrelas">
+                        <p>Fácil</p>
+                        <img src="./assets/Estrela.svg" width="17">
+                        <img src="./assets/Estrela-branca.svg" width="17">
+                        <img src="./assets/Estrela-branca.svg" width="17">
+                        <img src="./assets/Estrela-branca.svg" width="17">
+                        <img src="./assets/Estrela-branca.svg" width="17">
+                    </div>
+                    <div class="btn">
+                        <button id="left-button"><img id="left-btn" src="./assets/Seta_esquerda@2x.png"></button>
+                        <button id="right-button"><img id="right-btn"src="./assets/Seta_direita@2x.png"></button>
+                    </div>
+                </div>
+            </article>
+            <img src="assets/Elemento_5@2x.png">
+        </section>
+        <section class="third-section">
+            <div>
+                <img src="./assets/asset2.svg" width="100">
+                <h1 class="phrase-2">Entre no mundo gastronômico</h1>
+            </div>
+            <article class="main-article">
+                <ul>
+                    <li><button><img src="./assets/cozinha-apagado.svg" width="30"> Cozinha </button></li>
+                    <li><button class="checked"><img src="./assets/patisserie-aceso.svg" width="20"> Patisserie</button></li>
+                    <li><button><img src="./assets/drinks-apagado.svg" width="30"> Drinks </button></li>
+                </ul>
+                <figure>
+                    <img src="./assets/food.png" width="350">
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <img class="logo-image" src="./assets/logo.png">
+            <p>&copy 2022 Cookfy</p>
+        </section>
+
+        <section>
+            <ul>
+                <li><img src="./assets/facebook.svg" width="25"></li>
+                <li><img src="./assets/instagram.svg" width="25"></li>
+                <li><img src="./assets/twitter.svg" width="25"></li>
+                <li><img src="./assets/linkedin.svg" width="25"></li>
+                <li><img src="./assets/pinterest.svg" width="25"></li>
+            </ul>
+        </section>
+
+    </footer>
 
     <script src="./script.js"></script>
+    <script src="./events.js"></script>
 </body>
 
 </html>
