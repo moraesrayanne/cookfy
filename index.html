@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -16,27 +16,26 @@
 
 <body>
     <main>
-        <section class="first-section">
-            <div class="search-bar">
-                <img class="logo-image" src="./assets/logo.png" />
+        <section class="primary-section">
+            <div class="primary-component">
+                <img class="primary-component__logo" src="./assets/logo.png" />
                 <form>
-                    <input type="text" class="search-txt" placeholder="Pesquise alguma receita">
+                    <input type="text" class="primary-component__search-bar" placeholder="Pesquise alguma receita">
                     <img src="./assets/lupa.svg" class="lupa" alt="Buscar" />
                     </input>
                 </form>
-                <div class="user-info">
-                    <p class="color-name">Marina</p>
-                    <div class="user-image">
-                        <img src="./assets/user-img.svg" width="30">
+                <div class="primary-component__user-info">
+                     <p id="firstName" class="color-name"></p> <!-- Ver depois -->
+                    <div id="user-gender" class="user-image">
                     </div>
                 </div>
             </div>
-            <div class="welcome-content">
-                <div class="welcome-content-first-section">
+            <div class="secondary-component">
+                <div class="secondary-component__first-section">
                     <img src="./assets/header-foto.svg">
                     <div class="txt-content">
                         <div class="welcome-txt">
-                            <h1>Bem vindo de volta<br><span class="color-name">Marina Wedderhoff</span>
+                            <h1>Bem vindo de volta<br><span id="fullName" class="color-name"></span>
                                 <h1>
                         </div>
                         <span class="subtext">
@@ -46,7 +45,7 @@
                         </span>
                     </div>
                 </div>
-                <figure class="welcome-content-second-section">
+                <figure class="secondary-component__secondary-section">
                     <div class="container-img">
                         <img src="./assets/back-header.svg" class="background-img">
                         <img src="./assets/louis-hansel-ZwpX0AJ7GV8-unsplash.png" class="food-image">
@@ -77,7 +76,7 @@
                     </div>
                     <div class="btn">
                         <button id="left-button"><img id="left-btn" src="./assets/Seta_esquerda@2x.png"></button>
-                        <button id="right-button"><img id="right-btn"src="./assets/Seta_direita@2x.png"></button>
+                        <button id="right-button"><img id="right-btn" src="./assets/Seta_direita@2x.png"></button>
                     </div>
                 </div>
             </article>
@@ -90,9 +89,9 @@
             </div>
             <article class="main-article">
                 <ul>
-                    <li><button><img src="./assets/cozinha-apagado.svg" width="30"> Cozinha </button></li>
-                    <li><button class="checked"><img src="./assets/patisserie-aceso.svg" width="20"> Patisserie</button></li>
-                    <li><button><img src="./assets/drinks-apagado.svg" width="30"> Drinks </button></li>
+                    <li><button id="check-1" class="cozinha-btn"><span>Cozinha</span></button></li>
+                    <li><button id="check-2" class="pat-btn checked-patisserie"><span>Patisserie</span></button></li>
+                    <li><button id="check-3" class="drinks-btn"><span>Drinks</span></button></li>
                 </ul>
                 <figure>
                     <img src="./assets/food.png" width="350">
@@ -103,7 +102,7 @@
 
     <footer>
         <section>
-            <img class="logo-image" src="./assets/logo.png">
+            <img class="primary-component__logo" src="./assets/logo.png">
             <p>&copy 2022 Cookfy</p>
         </section>
 
@@ -121,6 +120,7 @@
 
     <script src="./script.js"></script>
     <script src="./events.js"></script>
+    <script src="./getUser.js"></script>
 </body>
 
 </html>

@@ -37,25 +37,25 @@
 /* -------------------------------------- SCROLL ---------------------------------- */
 
 /* -------------------------------------- HEADER ---------------------------------- */
-.first-section {
+.primary-section {
     width: 100%;
     height: 85vh;
     background-color: #ffdbbc;
 }
 
-.search-bar {
+.primary-component {
     height: 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.logo-image {
+.primary-component__logo {
     width: 18vh;
     height: 7vh;
 }
 
-.search-txt {
+.primary-component__search-bar {
     width: 45vw;
     height: 7vh;
     padding: 9px 20px;
@@ -65,7 +65,7 @@
     font-family: 'Roboto', serif;
 }
 
-.search-txt::placeholder {
+.primary-component__search-bar::placeholder {
     font-family: 'Roboto', serif;
     color: rgb(186, 186, 186)
 }
@@ -82,7 +82,7 @@ input:focus {
   position: relative;
 }
 
-.user-info {
+.primary-component__user-info {
     width: 25vh;
     font-size: 1.125rem;
     display: flex;
@@ -91,7 +91,7 @@ input:focus {
     align-items: center;
 }
 
-.user-info p {
+.primary-component__user-info p {
     font-family: 'Roboto', serif;
     color: #e82147;
 }
@@ -103,26 +103,37 @@ input:focus {
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: #e82147;
     text-align: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user-image-female {
+    background-image: url('../assets/female.svg')
+}
+
+.user-image-male {
+    background-image: url('../assets/male.svg')
 }
 
 .user-image img {
     margin-top: 9px;
 }
 
-.welcome-content {
+.secondary-component {
     height: 80%;
     display: flex;
     justify-content: space-between;
 }
 
-.welcome-content-first-section {
+.secondary-component__first-section {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.welcome-content-first-section img {
+.secondary-component__first-section img {
     max-width: 13vw;
     max-height: 20vw;
     margin: auto;
@@ -136,7 +147,7 @@ input:focus {
 
 .welcome-txt {
     font-family: 'Playfair Display', serif;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     /* font-size: 2.5vw; */
     /* font-size: 2vh; */
     font-weight: bold;
@@ -151,7 +162,7 @@ input:focus {
     color: #e82147;
 }
 
-.welcome-content-second-section {
+.secondary-component__secondary-section {
     width: 45%;
     display: flex;
     align-items: center;
@@ -315,10 +326,67 @@ input:focus {
     box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
 }
 
+ul button span {
+    margin-left: 50px;
+}
+
+ul button {
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-position-x: 40px;
+}
+
+.cozinha-btn {
+    background-image: url("../assets/cozinha-apagado.svg");
+}
+
+.pat-btn {
+    background-image: url("../assets/patisserie-apagado.svg");
+}
+
+.drinks-btn {
+    background-image: url("../assets/drinks-apagado.svg");
+}
+
+.main-article ul button:hover {
+    border: 1px solid #e82147;
+}
+
+.checked-cozinha {
+    color: #e82147 !important;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+    background-image: url("../assets/cozinha-aceso.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-position-x: 40px;
+}
+
+.checked-patisserie {
+    color: #e82147 !important;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+    background-image: url("../assets/patisserie-aceso.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-position-x: 40px;
+}
+
+.checked-drinks {
+    color: #e82147 !important;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+    background-image: url("../assets/drinks-aceso.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    background-position-x: 40px;
+}
+
 footer {
     width: 100%;
     height: 15vw;
-    background-image: url("./assets/footer.svg");  
+    background-image: url("../assets/footer.svg");  
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
