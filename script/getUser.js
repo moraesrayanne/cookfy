@@ -1,14 +1,12 @@
 async function getUser() {
-    const response = await await (await fetch('https://randomuser.me/api')).json();
+    const response = await (await fetch('https://randomuser.me/api')).json();
     const user = response.results[0];
-    displayUser(user);
+    showUser(user);
 }
 
-function displayUser(user) {
+function showUser(user) {
     const fullName = document.getElementById('fullName');
     const firstName = document.getElementById('firstName');
-    const gender = document.getElementById('gender');
-
     const userGender = document.getElementById('user-gender');
 
     if(user.gender === 'male') {

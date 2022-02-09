@@ -4,13 +4,3 @@
 
 #### Continua...
 
-
-AMANHÃ:
-
-- Melhorar as classes.
-- Fazer hover nas redes sociais.
-
-TERÇA:
-
-Fazer menu com as outras informações do user.
-Abrir modal.
