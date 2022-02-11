@@ -2,6 +2,8 @@
 
 Este projeto foi desenvolvido utilizando HTML, CSS e Javascript puro.
 
+Foi utilizada a API Random User para que a cada vez que a página for recarregada, um usuário novo seja exibido. A foto do usuário muda de acordo com o seu gênero.
+
 ## Como rodar?
 
 Clone o repositório:
